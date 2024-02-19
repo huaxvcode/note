@@ -20,6 +20,7 @@ let getRow = (n, pos) => {
     for (let i = 1; i <= n; i ++) {
         s += getColumnRight(n, i, pos);
     }
+    s += `</div>`
     return s;
 };
 
