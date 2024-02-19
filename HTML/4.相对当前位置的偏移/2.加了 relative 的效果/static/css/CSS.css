@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+div.d1 {
+    background-color: red;
+}
+
+div.d2 {
+    background-color: blue;
+    /* 
+        相对位置，是相对于原来的位置进行偏移
+    */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+div.d3 {
+    background-color: green;
+}

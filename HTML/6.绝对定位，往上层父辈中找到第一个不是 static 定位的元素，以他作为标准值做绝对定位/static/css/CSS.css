@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    margin: 10px;
+    /* display: inline-block; */
+}
+
+div > div {
+    display: inline-block;
+}
+
+div.d1 {
+    height: 5000px;
+    width: 600px;
+    margin: auto;
+    background-color: burlywood;
+
+    /* note1: */
+    position: relative;
+}
+
+div.d1::before {
+    content: "";
+    display: table;
+}
+
+/* note2: */
+div.d3 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: green;
+}
+
+/* 
+    读者如果对 note1 加上注释，块3 就不会以父元素块1 为参考做绝对定位，导致块 3 左移
+
+    读者如果对 note2 加上注释，块3 就会飞回原来的位置，并且块4 也会飞回原来的位置，因为如果块3 加了绝对定位之后，块3 并不会像相对定位那样霸占原来的位置，但是块3 仍然像绝对定位那样上浮
+*/

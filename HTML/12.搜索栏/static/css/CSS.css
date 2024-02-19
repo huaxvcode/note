@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 最外层有一个元素，不是 static 的，并且可以占满整个屏幕 */
+
+div.site {
+    /* 将定位设置成绝对定位，就可以 以最外层那个特殊元素 为坐标调整大小和位置*/
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+    /* 图片链接 */
+    background-image: url(/static/image/background.png);
+    /* 图片不重复 */
+    background-repeat: no-repeat;
+    /* 图片覆盖整个最外层的特殊元素，并且此元素不会收到浏览器伸缩的影响 */
+    background-size: cover;
+    /* 图片设置为居中对齐 */
+    background-position: center;
+}
+
+div.site::before {
+    content: "";
+    display: table;
+}
+
+.search {
+    position: fixed;
+    top: 17%;
+    left: calc((100% - 806px) / 2);
+}
+
+.search > div {
+    float: left;
+    border: 3px solid;
+    border-color: aliceblue;
+}
+
+.searchBox {
+    display: inline-block;
+    background-color: black;
+
+    /* 设置了 position 后，元素就脱离了文档流，就不可以用 margin auto 来自动调整了 */
+    /* margin: auto; */
+    width: 700px;
+    height: 60px;
+}
+
+div.sl, div.sr {
+    width: 50px;
+    height: 60px;
+    display: inline-block;
+    background-color: black;
+}
+
+div.sl {
+    border-right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+div.sr {
+    border-left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+div.searchBox {
+    border-left: 0;
+    border-right: 0;
+}

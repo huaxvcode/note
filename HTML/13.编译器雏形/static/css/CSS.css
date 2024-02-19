@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.home {
+    position: fixed;
+    width: calc(100vw - 10px);
+    height: calc(100vh - 10px);
+    border: 5px solid;
+    border-color: red;
+    padding: 0;
+}
+
+div.home::before {
+    content: "";
+    display: table;
+}
+
+div.write {
+    position: fixed;
+    width: 75%;
+    height: calc(100% - 10px);
+    border: 5px solid;
+    border-color: red;
+    border-left: 0;
+    border-bottom: 0;
+    border-top: 0;
+    float: left;
+    /* 如果子元素在 y 轴上超出了该盒子的尺寸，允许子元素滚动 */
+    overflow-y: scroll;
+    background-color: black;
+}
+
+/* 隐藏盒子的滚动条 */
+div.write::-webkit-scrollbar {
+    display: none;
+}
+
+div.item {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    /* height: 70%; */
+    background-color: green;
+    margin-top: 50px;
+    /* overflow-y: auto; */
+}
+
+div.item > div.title {
+    width: 100%;
+    height: 60px;
+    /* 宽高百分比，宽:高 */
+    /* aspect-ratio: 12/1; */
+    background-color: rgb(228, 228, 240);
+}
+
+div.item div.text {
+    padding-left: 20px;
+    width: 45%;
+    height: 60px;
+    /* background-color: yellow; */
+    text-align: left;
+    float: left;
+}
+
+div.language {
+    float: right;
+    width: 70px;
+    height: 56px;
+    font-weight: bolder;
+    line-height: 56px;
+    text-align: center;
+    /* border: 2px solid;
+    color: cadetblue; */
+    margin-right: 20px;
+}
+
+div.run {
+    float: right;
+    background-image: url(/static/image/运行.png);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+    margin-right: 20px;
+}
+
+div.code {
+    width: calc(100% - 20px);
+    height: 700px;
+    background-color: yellow;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+div.new {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #949393;
+}
+
+div.ior {
+    position: fixed;
+    right: 5px;
+    float: right;
+    width: calc(100% - 75% - 15px);
+    height: calc(100% - 10px);
+    /* background-color: black; */
+}
+
+div.ior > div {
+    width: 100%;
+    height: calc((100% - 10px) / 3);
+    background-color: #552f81;
+    border-bottom: 5px solid;
+    border-bottom-color: red;
+}
+
+div.ior div.res {
+    border-bottom: 0px;
+}
+
+div.ior div.title {
+    width: calc(100% - 20px);
+    height: 45px;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 45px;
+    font-weight: bolder;
+    background-color: #bdb3b3;
+}
+
+div.ior div.text {
+    width: 100%;
+    height: calc(100% - 45px);
+    background-color: #fff;
+}

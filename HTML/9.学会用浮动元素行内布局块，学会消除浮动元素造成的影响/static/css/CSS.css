@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.fa {
+    width: 700px;
+    height: 1440px;
+    background-color: pink;
+    margin: auto;
+}
+
+div.fl {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    float: left;
+}
+
+div > div.end {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    /* 由于浮动是不占用位置的，但是浮动只能在父元素内浮动 */
+    /* 这样就导致了红色块被浮动的元素挡住了，并且红色块跑到了浮动元素的下边 */
+    /* 消除之前出现的元素的浮动影响 */
+    clear: both;
+    display: inline-block;
+}
+
+div > div#test {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: inline-block;
+}

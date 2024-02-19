@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    position: relative;
+    top: 200px;
+    margin: auto;
+    height: 100px;
+    width: 300px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+div {
+    -moz-user-select:none; /*火狐*/
+    -webkit-user-select:none; /*webkit浏览器*/
+    -ms-user-select:none; /*IE10*/
+    -khtml-user-select:none; /*早期浏览器*/
+    user-select:none;
+}

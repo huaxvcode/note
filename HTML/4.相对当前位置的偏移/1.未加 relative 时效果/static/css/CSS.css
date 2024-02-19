@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+div.d1 {
+    background-color: red;
+}
+
+div.d2 {
+    background-color: blue;
+}
+
+div.d3 {
+    background-color: green;
+}

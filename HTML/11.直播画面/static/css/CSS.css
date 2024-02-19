@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.site {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    background-color: white;
+    height: 60px;
+}
+
+.video {
+    height: calc(100% - 120px);
+    background-color: black;
+    position: relative;
+}
+
+.info {
+    background-color: white;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    height: 60px;
+    width: 60px;
+    background-image: url(/static/image/丛雨.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+div.text {
+    float: left;
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+}
+
+.videoBox {
+    width: 100%;
+    height: auto;
+    /* 设置宽度和高度的百分比值 */
+    aspect-ratio: 16/9;
+    background-color: red;
+    position: absolute;
+    top: 26%;
+}
+
+.packg {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+}
+
+.packg > div {
+    margin-left: 20px;
+}
+
+.start {
+    height: 35px;
+    width: 35px;
+    background-image: url(/static/image/startVideo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.voice {
+    height: 35px;
+    width: 35px;
+    background-image: url(/static/image/voiceControl.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}

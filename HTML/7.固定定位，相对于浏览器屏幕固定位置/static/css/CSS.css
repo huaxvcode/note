@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div.fa {
+    width: 600px;
+    height: 3000px;
+    background-color: pink;
+    margin: auto;
+}
+
+div.fa::before {
+    content: "";
+    display: table;
+
+    /* 固定定位是相对与浏览器而言的，并不会受到父元素是否是 static 的影响 */
+    position: relative;
+}
+
+div > div {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+
+    /* 固定定位是相对与浏览器而言的，并不会受到父元素是否是 static 的影响 */
+    position: fixed;
+    right: 0%;
+    bottom: 100px;
+}
+
+/* 
+    读者滚动鼠标滑轮，会发现绿色块 “回到上层” 图标固定在屏幕的左下角了
+*/

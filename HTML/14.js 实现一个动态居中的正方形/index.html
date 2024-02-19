@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态大小居中的正方形块</title>
+    <link rel="stylesheet" href="/static/css/CSS.css" type="text/css">
+    <link rel="icon" href="/static/image/丛雨.jpg">
+</head>
+<body>
+    <div class="square">
+
+    </div>
+    <script>
+        // 获取元素
+        var elem = document.querySelector("div.square");
+        var fun = function() {
+            
+            elem.setAttribute("style", "height: 100%; width: 100%;");
+
+            // 获取元素的实时属性值（具体数值）
+            var style = window.getComputedStyle(elem);
+
+            var height = style.height;
+            height = height.substring(0, height.length - 2); // 字符串切片
+            height = parseFloat(height);
+
+            var width = style.width;
+            width = width.substring(0, width.length - 2); // 字符串切片
+            width = parseFloat(width);
+
+            var mi = Math.min(height, width) / 2;
+            elem.setAttribute("style", "height: " + mi + "px; width: " + mi + "px;");
+
+            elem.style.top = ((height - mi) / 2) + "px";
+            elem.style.left = ((width - mi) / 2) + "px";
+        }
+        
+        fun();
+
+        // 添加事件监听行为
+        // 窗体大小发生改变时会执行的代码
+        window.addEventListener('resize', fun);
+    </script>
+</body>
+</html>
