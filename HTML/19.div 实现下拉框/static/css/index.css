@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    /* background-color: black; */
+    /* border: 1px solid; */
+    /* border-color: blueviolet; */
+
+    /* 将边框宽度也纳入宽度中，即 weight 中包含了 border-size */
+    box-sizing: border-box;
+
+}
+
+.title {
+    border: 1px solid;
+    /* 将边框宽度也纳入宽度中，即 weight 中包含了 border-size */
+    border-color: blueviolet;
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+}
+
+.content {
+    height: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: blueviolet;
+
+    /* 先设置溢出时，后代隐藏 */
+    overflow: hidden;
+    /* 设置高度轴渐变效果 */
+    /* 上移 1px 合并附件边框 */
+    margin-top: -1px;
+    border-top: 0;
+
+    /* 内边距过渡时间 */
+    transition: padding 200ms, height 200ms;
+    padding: 0 10px 0 10px;
+}
