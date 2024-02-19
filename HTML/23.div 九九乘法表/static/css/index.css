@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.column {
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #42287D;
+    line-height: 40px;
+    text-align: center;
+    background-color: #2D2648;
+    color: #ADB5BD;
+    margin: -1px 0 0 -1px;
+}
+
+.row {
+    display: flex;
+}
+
+.nineNineBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css 同时选择有多个类名的元素 */
+.column.left.top {
+    background-color: #222C3F;
+    border-bottom: #448AFF;
+}
+/* css 同时选择有多个类名的元素 */
+.column.left.bottom {
+    background-color: #1B322D;
+    border-bottom: #00C853;
+}
+/* css 同时选择有多个类名的元素 */
+.column.right.top {
+    background-color: #35262D;
+    border-bottom: #FF5252;
+}
+/* css 同时选择有多个类名的元素 */
+.column.right.bottom {
+    background-color: #28263F;
+    border-bottom: #7C4DFF;
+}
