@@ -1,0 +1,16 @@
+// 将键绑定放在此文件中以覆盖默认值
+[
+    {
+        "key": "alt+e",
+        "command": "outline.focus"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-workbench.action.chat.open",
+        "when": "hasChatProvider"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "editor.action.insertSnippet"
+    }
+]

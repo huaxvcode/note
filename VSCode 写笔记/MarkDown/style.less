@@ -1,0 +1,136 @@
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+    // modify your style here
+    // eg: background-color: blue;
+    * {
+      font-family: 'Fira Code';
+    }
+    pre[class*="language-"] * {
+      font-size: 22px;
+    }
+    p {
+      font-size: 22px;
+      // color: #adb5bd;
+    }
+    p code {
+      font-size: 22px;
+      // color: #adb5bd;
+    }
+    h1 {
+      font-size: 46px;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: normal;
+    }
+    h4 {
+      font-size: 19px;
+      font-weight: normal;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: normal;
+    }
+    h6 {
+      font-size: 12px;
+      font-weight: normal;
+    }
+    strong {
+      color: rgb(253, 161, 176);
+    }
+    em {
+      color: rgb(253, 161, 176);
+    }
+    ins {
+      text-decoration: underline;
+      /* 处于文字的下方，不会碰触文字 */
+      text-underline-position: under;
+    }
+    del {
+  
+    }
+    ul li, ol li {
+      font-size: 22px;
+    }
+    ol {
+      margin-left: 30px;
+    }
+    ul {
+      margin-left: 30px;
+    }
+  
+    .block {
+      border-radius: 6px;
+      border-left: 4px solid #448AFF;
+      margin: 25px 0;
+    }
+  
+    .block::before {
+      content: '';
+      display: table;
+    }
+  
+    .block::after {
+      content: '';
+      display: table;
+    }
+  
+    .block, .block * {
+      font-size: 18px;
+    }
+    
+    .block > * {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .block > .title {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      background-color: #222C3F;
+      color: #FFFFFF;
+    }
+    .block > .title > *:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  
+    details {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-left: 5px solid #448AFF;
+      padding-left: 10px;
+    }
+  
+    details, details * {
+      font-size: 16px;
+    }
+  
+    details > summary {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 0;
+      color: #448AFF;
+      -moz-user-select:none; /* Firefox私有属性 */
+      -webkit-user-select:none; /* WebKit内核私有属性 */
+      -ms-user-select:none; /* IE私有属性(IE10及以后) */
+      -khtml-user-select:none; /* KHTML内核私有属性 */
+      -o-user-select:none; /* Opera私有属性 */
+      user-select:none; /* CSS3属性 */
+    }
+  
+    details > *:last-child {
+      margin-bottom: 0;
+    }
+  }
