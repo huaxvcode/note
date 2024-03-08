@@ -18,11 +18,11 @@
 	"details": {
 		"prefix": "details",
 		"body": [
-			"<details><summary>$1</summary><div><div/>",
+			"<details><summary>$1</summary>",
 			"",
 			"",
 			"",
-			"<div><div/></details>",
+			"</details>",
 		],
 		"description": "Log output to console"
 	}
